@@ -499,3 +499,94 @@ Application bundle generation failed. [0.005 seconds]
 
 
 ❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [4.425 seconds]
+
+▲ [WARNING] TS-998113: All imports are unused [plugin angular-compiler]
+
+    src/app/app.component.ts:6:2:
+      6 │   imports: [RouterOutlet],
+        ╵   ~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/global-notifications/global-notifications.component.html:1:34:
+      1 │ <div class="notification-banner" *ngIf="notification">
+        ╵                                   ~~~~
+
+  Error occurs in the template of component GlobalNotificationsComponent.
+
+    src/app/global-notifications/global-notifications.component.ts:6:15:
+      6 │   templateUrl: './global-notifications.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/global-notifications/global-notifications.component.html:4:27:
+      4 │ <div class="error-banner" *ngIf="errorMessage">
+        ╵                            ~~~~
+
+  Error occurs in the template of component GlobalNotificationsComponent.
+
+    src/app/global-notifications/global-notifications.component.ts:6:15:
+      6 │   templateUrl: './global-notifications.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/job-list/job-list.component.html:3:17:
+      3 │   <ng-container *ngIf="jobs.length; else noJobs">
+        ╵                  ~~~~
+
+  Error occurs in the template of component JobListComponent.
+
+    src/app/job-list/job-list.component.ts:6:15:
+      6 │   templateUrl: './job-list.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/job-list/job-list.component.html:4:27:
+      4 │     <div class="job-card" *ngFor="let job of jobs">
+        ╵                            ~~~~~
+
+  Error occurs in the template of component JobListComponent.
+
+    src/app/job-list/job-list.component.ts:6:15:
+      6 │   templateUrl: './job-list.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/recommended-skills/recommended-skills.component.html:4:24:
+      4 │     <span class="chip" *ngFor="let skill of skills">
+        ╵                         ~~~~~
+
+  Error occurs in the template of component RecommendedSkillsComponent.
+
+    src/app/recommended-skills/recommended-skills.component.ts:6:15:
+      6 │   templateUrl: './recommended-skills.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8001: 'jobmatchpro-main-container' is not a known element:
+1. If 'jobmatchpro-main-container' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'jobmatchpro-main-container' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message. [plugin angular-compiler]
+
+    src/app/app.component.html:336:0:
+      336 │ <jobmatchpro-main-container></jobmatchpro-main-container>
+          ╵ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component AppComponent.
+
+    src/app/app.component.ts:7:15:
+      7 │   templateUrl: './app.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...

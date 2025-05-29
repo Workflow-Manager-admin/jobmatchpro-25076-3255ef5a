@@ -37,13 +37,13 @@ export class MainContainerComponent {
   /** Trigger a global notification. For demonstration. */
   notify(msg: string) {
     this.notification = msg;
-    setTimeout(() => (this.notification = null), 4000);
+    window.setTimeout(() => (this.notification = null), 4000);
   }
 
   // PUBLIC_INTERFACE
   /** Trigger a global error. For demonstration. */
   error(msg: string) {
     this.errorMessage = msg;
-    setTimeout(() => (this.errorMessage = null), 4000);
+    window.setTimeout(() => (this.errorMessage = null), 4000);
   }
 }
