@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 // PUBLIC_INTERFACE
 @Component({
@@ -30,7 +31,8 @@ import { Component } from '@angular/core';
       border-radius: 50%; background: #27AE60; display: inline-block;
     }
   `],
-  standalone: true
+  standalone: true,
+  imports: [CommonModule]
 })
 export class SkillRecommendationsComponent {
   recommendations = [

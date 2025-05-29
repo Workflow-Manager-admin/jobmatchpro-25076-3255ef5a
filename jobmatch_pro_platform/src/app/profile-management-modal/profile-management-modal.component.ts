@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 // PUBLIC_INTERFACE
 @Component({
@@ -31,7 +32,8 @@ import { Component } from '@angular/core';
     }
     .modal-content button:hover { background: #222; }
   `],
-  standalone: true
+  standalone: true,
+  imports: [CommonModule]
 })
 export class ProfileManagementModalComponent {
   visible = false;
