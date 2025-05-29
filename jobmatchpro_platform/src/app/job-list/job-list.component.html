@@ -1,0 +1,25 @@
+<div class="job-list">
+  <h2>Matched Jobs</h2>
+  <ng-container *ngIf="jobs.length; else noJobs">
+    <div class="job-card" *ngFor="let job of jobs">
+      <div class="job-title">{{job.title}}</div>
+      <div class="job-meta">
+        <span>{{job.company}}</span> • <span>{{job.location}}</span>
+      </div>
+      <div class="job-details">
+        <span class="salary">{{job.salary}}</span>
+        <span class="match" [style.color]="'var(--accent)'">{{job.match}}% match</span>
+      </div>
+      <button 
+        class="cta-btn" 
+        [class.applied]="job.applied"
+        [disabled]="job.applied"
+      >
+        {{ job.applied ? 'Applied' : 'Apply Now' }}
+      </button>
+    </div>
+  </ng-container>
+  <ng-template #noJobs>
+    <div class="no-jobs">No jobs found. Adjust filters or try a different search.</div>
+  </ng-template>
+</div>
