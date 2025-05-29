@@ -1,11 +1,13 @@
 import { Component, Output, EventEmitter } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 // PUBLIC_INTERFACE
 @Component({
   selector: 'app-search-bar',
   templateUrl: './search-bar.component.html',
   styleUrls: ['./search-bar.component.css'],
-  standalone: true
+  standalone: true,
+  imports: [FormsModule]
 })
 /**
  * Prominent search bar for job and skill search.
