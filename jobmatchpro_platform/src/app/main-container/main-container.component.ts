@@ -1,4 +1,11 @@
 import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
+
+import { GlobalNotificationsComponent } from '../global-notifications/global-notifications.component';
+import { SearchBarComponent } from '../search-bar/search-bar.component';
+import { FilterSidebarComponent } from '../filter-sidebar/filter-sidebar.component';
+import { JobListComponent } from '../job-list/job-list.component';
+import { RecommendedSkillsComponent } from '../recommended-skills/recommended-skills.component';
 
 // PUBLIC_INTERFACE
 @Component({
@@ -6,7 +13,14 @@ import { Component } from '@angular/core';
   templateUrl: './main-container.component.html',
   styleUrls: ['./main-container.component.css'],
   standalone: true,
-  imports: []
+  imports: [
+    RouterOutlet,
+    GlobalNotificationsComponent,
+    SearchBarComponent,
+    FilterSidebarComponent,
+    JobListComponent,
+    RecommendedSkillsComponent
+  ]
 })
 /**
  * Main container that holds all top-level features and layout for JobMatchPro.
