@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
     <div class="job-card" *ngFor="let job of jobs">
       <div>
         <strong>{{job.title}}</strong>
-        <span class="company">@<span>{{job.company}}</span></span>
+        <span class="company">&#64;{{job.company}}</span>
       </div>
       <div class="desc">{{job.description}}</div>
       <button class="apply-btn" [disabled]="true">Apply</button>
