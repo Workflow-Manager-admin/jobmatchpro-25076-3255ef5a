@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { CommonModule } from '@angular/common';
 // PUBLIC_INTERFACE
 @Component({
   selector: 'app-global-notification',
@@ -24,7 +24,8 @@ import { Component } from '@angular/core';
       z-index: 1500;
     }
   `],
-  standalone: true
+  standalone: true,
+  imports: [CommonModule]
 })
 export class GlobalNotificationComponent {
   visible = false;

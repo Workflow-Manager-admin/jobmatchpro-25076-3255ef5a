@@ -6,7 +6,7 @@ Warning: Running a server with --disable-host-check is a security risk. See http
 The "disableHostCheck" option will not be used because it is not supported by the "@angular-devkit/build-angular:application" builder.
 ❯ Building...
 ✔ Building...
-Application bundle generation failed. [10.973 seconds]
+Application bundle generation failed. [12.256 seconds]
 
 ▲ [WARNING] TS-998113: MainContainerComponent is not used within the template of AppComponent [plugin angular-compiler]
 
