@@ -1,0 +1,35 @@
+.filter-sidebar h3 {
+  color: var(--primary);
+  margin: 0 0 14px 0;
+  font-size: 1.17rem;
+}
+
+.filter-group {
+  margin-bottom: 13px;
+}
+
+.filter-group label {
+  display: block;
+  font-weight: 500;
+}
+
+.filter-group input[type="text"], .filter-group select {
+  margin-top: 5px;
+  width: 100%;
+  padding: 7px 10px;
+  border-radius: var(--border-radius);
+  border: 1px solid #dbe7f1;
+  background: var(--secondary);
+}
+
+.apply-filters {
+  width: 100%;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 9px 0;
+  font-weight: 600;
+  margin-top: 7px;
+  cursor: pointer;
+}
