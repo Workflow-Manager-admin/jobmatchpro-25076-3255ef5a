@@ -1,0 +1,43 @@
+<div class="dashboard-root">
+  <!-- Header bar (fixed, contains logo, search, avatar, notifications) -->
+  <header class="dashboard-header">
+    <div class="logo-title">
+      <span class="logo-circle"></span>
+      <span class="brand-title">JobMatchPro</span>
+    </div>
+    <div class="search-area">
+      <input type="text" class="search-input" placeholder="Search jobs, companies, keywords..." aria-label="Search Jobs" />
+      <button class="search-btn" aria-label="Search">
+        🔍
+      </button>
+    </div>
+    <div class="header-actions">
+      <button class="notification-btn" aria-label="View Notifications">🔔</button>
+      <div class="profile-avatar" title="Profile"></div>
+    </div>
+  </header>
+  <!-- Main content area with sidebar and job/results main area -->
+  <div class="dashboard-main">
+    <aside class="sidebar">
+      <h2>Filters</h2>
+      <!-- Job Search Filters integration point -->
+      <app-job-search-filters />
+    </aside>
+    <section class="job-results-section">
+      <div class="section-header">
+        <h2>Matched Jobs</h2>
+        <span class="subtitle">Personalized for You</span>
+      </div>
+      <!-- Job Matching List integration point -->
+      <app-job-matching-list />
+    </section>
+    <aside class="skills-recommendation">
+      <h2>Recommended Skills</h2>
+      <!-- Skill Recommendation integration point -->
+      <app-skill-recommendations />
+    </aside>
+  </div>
+  <!-- Profile & notifications global modals (integration points) -->
+  <app-global-notification />
+  <app-profile-management-modal />
+</div>
