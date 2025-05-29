@@ -29,3 +29,81 @@ NOTE: Raw file sizes do not reflect development server per-request transformatio
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.17.0.2:3000/
 ❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [1.966 seconds]
+
+✘ [ERROR] NG8001: 'app-job-search-filters' is not a known element:
+1. If 'app-job-search-filters' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-job-search-filters' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message. [plugin angular-compiler]
+
+    src/app/main-container/main-container.component.html:24:6:
+      24 │       <app-job-search-filters />
+         ╵       ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component MainContainerComponent.
+
+    src/app/main-container/main-container.component.ts:6:15:
+      6 │   templateUrl: './main-container.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8001: 'app-job-matching-list' is not a known element:
+1. If 'app-job-matching-list' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-job-matching-list' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message. [plugin angular-compiler]
+
+    src/app/main-container/main-container.component.html:32:6:
+      32 │       <app-job-matching-list />
+         ╵       ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component MainContainerComponent.
+
+    src/app/main-container/main-container.component.ts:6:15:
+      6 │   templateUrl: './main-container.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8001: 'app-skill-recommendations' is not a known element:
+1. If 'app-skill-recommendations' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-skill-recommendations' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message. [plugin angular-compiler]
+
+    src/app/main-container/main-container.component.html:37:6:
+      37 │       <app-skill-recommendations />
+         ╵       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component MainContainerComponent.
+
+    src/app/main-container/main-container.component.ts:6:15:
+      6 │   templateUrl: './main-container.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8001: 'app-global-notification' is not a known element:
+1. If 'app-global-notification' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-global-notification' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message. [plugin angular-compiler]
+
+    src/app/main-container/main-container.component.html:41:2:
+      41 │   <app-global-notification />
+         ╵   ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component MainContainerComponent.
+
+    src/app/main-container/main-container.component.ts:6:15:
+      6 │   templateUrl: './main-container.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8001: 'app-profile-management-modal' is not a known element:
+1. If 'app-profile-management-modal' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-profile-management-modal' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message. [plugin angular-compiler]
+
+    src/app/main-container/main-container.component.html:42:2:
+      42 │   <app-profile-management-modal />
+         ╵   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component MainContainerComponent.
+
+    src/app/main-container/main-container.component.ts:6:15:
+      6 │   templateUrl: './main-container.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
