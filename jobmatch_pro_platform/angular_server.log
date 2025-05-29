@@ -107,3 +107,166 @@ Application bundle generation failed. [1.966 seconds]
         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [2.567 seconds]
+
+▲ [WARNING] TS-998113: MainContainerComponent is not used within the template of AppComponent [plugin angular-compiler]
+
+    src/app/app.component.ts:17:4:
+      17 │     MainContainerComponent,
+         ╵     ~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] TS-998113: JobSearchFiltersComponent is not used within the template of AppComponent [plugin angular-compiler]
+
+    src/app/app.component.ts:18:4:
+      18 │     JobSearchFiltersComponent,
+         ╵     ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] TS-998113: JobMatchingListComponent is not used within the template of AppComponent [plugin angular-compiler]
+
+    src/app/app.component.ts:19:4:
+      19 │     JobMatchingListComponent,
+         ╵     ~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] TS-998113: SkillRecommendationsComponent is not used within the template of AppComponent [plugin angular-compiler]
+
+    src/app/app.component.ts:20:4:
+      20 │     SkillRecommendationsComponent,
+         ╵     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] TS-998113: ProfileManagementModalComponent is not used within the template of AppComponent [plugin angular-compiler]
+
+    src/app/app.component.ts:21:4:
+      21 │     ProfileManagementModalComponent,
+         ╵     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] TS-998113: GlobalNotificationComponent is not used within the template of AppComponent [plugin angular-compiler]
+
+    src/app/app.component.ts:22:4:
+      22 │     GlobalNotificationComponent
+         ╵     ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/global-notification/global-notification.component.ts:7:10:
+      7 │     <div *ngIf="visible" class="notification-banner" aria-live="pol...
+        ╵           ~~~~
+
+
+▲ [WARNING] NG8103: The `*ngIf` directive was used in the template, but neither the `NgIf` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @if or make sure that either the `NgIf` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/profile-management-modal/profile-management-modal.component.ts:7:10:
+      7 │     <div *ngIf="visible" class="profile-modal">
+        ╵           ~~~~
+
+
+▲ [WARNING] NG8103: The `*ngFor` directive was used in the template, but neither the `NgFor` directive nor the `CommonModule` was imported. Use Angular's built-in control flow @for or make sure that either the `NgFor` directive or the `CommonModule` is included in the `@Component.imports` array of this component. [plugin angular-compiler]
+
+    src/app/skill-recommendations/skill-recommendations.component.ts:8:11:
+      8 │       <li *ngFor="let skill of recommendations">
+        ╵            ~~~~~
+
+
+✘ [ERROR] NG5002: Unclosed block "" [plugin angular-compiler]
+
+    src/app/job-matching-list/job-matching-list.component.ts:12:30:
+      12 │         <span class="company">@{{job.company}}</span>
+         ╵                               ~~
+
+
+✘ [ERROR] NG5002: Invalid ICU message. Missing '}'. [plugin angular-compiler]
+
+    src/app/job-matching-list/job-matching-list.component.ts:18:2:
+      18 │   `,
+         ╵   ^
+
+
+✘ [ERROR] NG5002: Unexpected character "EOF" (Do you have an unescaped "{" in your template? Use "{{ '{' }}") to escape it.) [plugin angular-compiler]
+
+    src/app/job-matching-list/job-matching-list.component.ts:18:2:
+      18 │   `,
+         ╵   ^
+
+
+✘ [ERROR] NG8001: 'app-job-search-filters' is not a known element:
+1. If 'app-job-search-filters' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-job-search-filters' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message. [plugin angular-compiler]
+
+    src/app/main-container/main-container.component.html:24:6:
+      24 │       <app-job-search-filters />
+         ╵       ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component MainContainerComponent.
+
+    src/app/main-container/main-container.component.ts:6:15:
+      6 │   templateUrl: './main-container.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8001: 'app-job-matching-list' is not a known element:
+1. If 'app-job-matching-list' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-job-matching-list' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message. [plugin angular-compiler]
+
+    src/app/main-container/main-container.component.html:32:6:
+      32 │       <app-job-matching-list />
+         ╵       ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component MainContainerComponent.
+
+    src/app/main-container/main-container.component.ts:6:15:
+      6 │   templateUrl: './main-container.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8001: 'app-skill-recommendations' is not a known element:
+1. If 'app-skill-recommendations' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-skill-recommendations' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message. [plugin angular-compiler]
+
+    src/app/main-container/main-container.component.html:37:6:
+      37 │       <app-skill-recommendations />
+         ╵       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component MainContainerComponent.
+
+    src/app/main-container/main-container.component.ts:6:15:
+      6 │   templateUrl: './main-container.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8001: 'app-global-notification' is not a known element:
+1. If 'app-global-notification' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-global-notification' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message. [plugin angular-compiler]
+
+    src/app/main-container/main-container.component.html:41:2:
+      41 │   <app-global-notification />
+         ╵   ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component MainContainerComponent.
+
+    src/app/main-container/main-container.component.ts:6:15:
+      6 │   templateUrl: './main-container.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG8001: 'app-profile-management-modal' is not a known element:
+1. If 'app-profile-management-modal' is an Angular component, then verify that it is included in the '@Component.imports' of this component.
+2. If 'app-profile-management-modal' is a Web Component then add 'CUSTOM_ELEMENTS_SCHEMA' to the '@Component.schemas' of this component to suppress this message. [plugin angular-compiler]
+
+    src/app/main-container/main-container.component.html:42:2:
+      42 │   <app-profile-management-modal />
+         ╵   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component MainContainerComponent.
+
+    src/app/main-container/main-container.component.ts:6:15:
+      6 │   templateUrl: './main-container.component.html',
+        ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
