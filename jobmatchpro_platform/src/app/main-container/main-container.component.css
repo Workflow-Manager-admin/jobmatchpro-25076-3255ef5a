@@ -1,0 +1,73 @@
+:root {
+  --primary: #2C3E50;
+  --secondary: #ECF0F1;
+  --accent: #27AE60;
+  --border-radius: 10px;
+}
+
+/* Main background and text */
+.main-container {
+  min-height: 100vh;
+  background: var(--secondary);
+  color: var(--primary);
+  font-family: 'Inter', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-content {
+  flex: 1;
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1400px;
+  padding: 24px 16px;
+  gap: 24px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  flex-shrink: 0;
+  background: #fff;
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 10px rgba(44, 62, 80, 0.07);
+  padding: 18px 12px;
+  height: fit-content;
+}
+
+/* Jobs Main Area */
+.jobs-listing {
+  flex: 2;
+  background: #fff;
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 10px rgba(44, 62, 80, 0.07);
+  padding: 18px;
+  min-width: 400px;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Skills Section */
+.skills-section {
+  width: 320px;
+  flex-shrink: 0;
+  background: #fff;
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 10px rgba(44, 62, 80, 0.07);
+  padding: 18px 16px;
+  min-width: 280px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1020px) {
+  .dashboard-content {
+    flex-direction: column;
+    gap: 18px;
+  }
+  .sidebar, .skills-section {
+    width: 100%;
+    min-width: 0;
+  }
+}
