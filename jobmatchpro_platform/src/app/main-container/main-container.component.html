@@ -1,0 +1,27 @@
+<div class="main-container">
+  <app-global-notifications
+    [notification]="notification"
+    [errorMessage]="errorMessage"
+  ></app-global-notifications>
+
+  <!-- Top Search Bar -->
+  <app-search-bar (search)="notify('Searching for: ' + $event)"></app-search-bar>
+
+  <div class="dashboard-content">
+    <!-- Sidebar: Filters and Nav -->
+    <aside class="sidebar">
+      <app-filter-sidebar></app-filter-sidebar>
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="jobs-listing">
+      <router-outlet></router-outlet>
+      <app-job-list></app-job-list>
+    </main>
+
+    <!-- Recommended Skills Section -->
+    <section class="skills-section">
+      <app-recommended-skills></app-recommended-skills>
+    </section>
+  </div>
+</div>
