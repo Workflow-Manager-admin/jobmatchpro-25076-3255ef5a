@@ -1,0 +1,238 @@
+/* Theme variables (JobMatchPro palette) */
+:root {
+  --primary: #2c3e50;
+  --secondary: #ecf0f1;
+  --accent: #27ae60;
+  --background: #fff;
+  --card-bg: #f7fafc;
+  --text-main: #222;
+  --subtitle: #636e72;
+  --sidebar-width: 16rem;
+  --skills-bar-width: 15rem;
+  --header-height: 4rem;
+  --border-radius: 0.7rem;
+  --shadow: 0 4px 12px rgba(44,62,80,0.07);
+}
+
+/* Main container layout */
+.dashboard-root {
+  background: var(--secondary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header bar */
+.dashboard-header {
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--primary);
+  color: var(--secondary);
+  padding: 0 2rem;
+  box-shadow: var(--shadow);
+  z-index: 10;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+
+.logo-circle {
+  width: 2.4rem;
+  height: 2.4rem;
+  background: var(--accent);
+  border-radius: 50%;
+  margin-right: 0.7rem;
+  border: 2px solid var(--secondary);
+}
+.brand-title {
+  font-weight: 700;
+  font-size: 1.45rem;
+  letter-spacing: 0.01em;
+}
+
+.search-area {
+  display: flex;
+  align-items: center;
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  padding: 0 0.5rem;
+  height: 2.5rem;
+  margin-left: 1.5rem;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 1rem;
+  padding: 0.5rem;
+  min-width: 220px;
+  color: var(--text-main);
+}
+.search-btn {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 0.4rem;
+  height: 2rem;
+  width: 2.5rem;
+  margin-left: 0.3rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-btn:hover, .notification-btn:hover {
+  background: #219150;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.notification-btn {
+  font-size: 1.2rem;
+  background: none;
+  border: none;
+  color: var(--secondary);
+  cursor: pointer;
+  padding: 0.4rem;
+  transition: background 0.15s;
+  border-radius: 100%;
+}
+
+.profile-avatar {
+  width: 2.1rem;
+  height: 2.1rem;
+  background: linear-gradient(135deg, var(--accent) 70%, var(--primary) 100%);
+  border-radius: 100%;
+  border: 2px solid var(--secondary);
+  box-shadow: var(--shadow);
+}
+
+/* Main dashboard grid */
+.dashboard-main {
+  flex: 1 1 auto;
+  display: grid;
+  grid-template-columns: var(--sidebar-width) 1fr var(--skills-bar-width);
+  gap: 2rem;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2.2rem 2.9rem;
+  background: var(--secondary);
+}
+
+.sidebar {
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  padding: 1.3rem 1rem 1.6rem 1.3rem;
+  height: fit-content;
+  min-width: var(--sidebar-width);
+  box-shadow: var(--shadow);
+  margin-bottom: 1.5rem;
+}
+
+.sidebar h2 {
+  font-size: 1.16rem;
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* Job results main area */
+.job-results-section {
+  background: var(--background);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  min-width: 0;
+  min-height: 20rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-header {
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.section-header h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-right: 0.8rem;
+}
+
+.subtitle {
+  color: var(--subtitle);
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.skills-recommendation {
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  padding: 1.3rem 1rem 1.6rem 1.1rem;
+  height: fit-content;
+  min-width: var(--skills-bar-width);
+  box-shadow: var(--shadow);
+  margin-bottom: 1.5rem;
+}
+
+.skills-recommendation h2 {
+  font-size: 1.13rem;
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+/* Responsive Design */
+@media (max-width: 1100px) {
+  .dashboard-main {
+    grid-template-columns: 12rem 1fr 12rem;
+    padding: 1.2rem 0.3rem;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .dashboard-main {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 0.7rem 0.1rem;
+  }
+  .sidebar, .skills-recommendation {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+    height: auto;
+    padding: 0.7rem 0.5rem;
+  }
+  .dashboard-main {
+    padding: 0.4rem 0.1rem;
+  }
+  .job-results-section {
+    padding: 1rem;
+  }
+}
+
+/* Utility Styles */
+button {
+  outline: none;
+}
